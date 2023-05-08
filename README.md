@@ -6,7 +6,6 @@
 simple server, physical or virtual machine
 #### pod
 smallest unit of k8s
-
 abstraction over a container
 
 it creates running environment (layer on top of the container)
@@ -62,4 +61,8 @@ spec:
             port:
               name: http
 ```
-#### node
+#### configMap
+external configuration of your application
+
+
+
