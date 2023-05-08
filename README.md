@@ -24,7 +24,7 @@ provides static/permanent ip address that can be attached to each pod
 
 lifecycle of Pod and Service NOT connected -> if Pod dies, service and its IP address still stay
 
-external service, internal service
+internal service
 
 ```yaml
 apiVersion: v1
