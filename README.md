@@ -60,7 +60,30 @@ similar to configmap, used to store secret data (in base64 encoded)
 storage on local node or remote (outside of k8s cluster)
 
 #### deployment
-
+manages a set of replicas of your application  
+provide an easy way to manage the lifecycle of your application, including scaling, rolling updates, and self-healing in the event of failures  
+Ex:  
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-webapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-webapp
+  template:
+    metadata:
+      labels:
+        app: my-webapp
+    spec:
+      containers:
+        - name: my-webapp
+          image: myregistry/my-webapp:1.0
+          ports:
+            - containerPort: 80
+```
 #### stateful set
 
 
