@@ -113,12 +113,17 @@ It serves as the front-end for the Kubernetes control plane, providing a REST AP
 request -> api server -> validates request -> other processes -> pod  
 
 **Scheduler**  
-Schedule new Pode -> api server -> Scheduler -> where to put the pod?  -> kubelet will execute  
+responsible for scheduling workloads onto the available nodes in the cluster
+Schedule new Pod -> api server -> Scheduler -> where to put the pod?  -> kubelet will execute  
 Scheduler just decides on which Node new Pod should be scheduled  
 
 **Controller manager**  
+watch the state of the cluster and make changes to maintain the desired state  
 
-
+**etcdr**  
+it's cluster brain
+cluster changes get stored in the key value store in etcd  
+-> that's why how scheduler know what resources are available; how it know cluster state change...  
 
 
 
