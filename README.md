@@ -100,7 +100,7 @@ is responsible for **running and managing containers** on a node in a Kubernetes
 **Kubelet**  
 interacts with both - the container and node. Kubelet starts the pod with a container inside. Kubelet is an agent that runs on each node in a Kubernetes cluster. It **communicates with the Kubernetes API server** to receive information about which pods should be running on the node, and then **manages the containers and other resources associated with those pods**.  
 **Kubeproxy**   
-forwards the requests. It is responsible for **managing network routing**. It runs on each node in the cluster and maintains network rules to allow communication between different pods and services within the cluster.
+forwards the requests. It is responsible for **managing network routing**. It runs on each node in the cluster and maintains network rules to allow communication between different pods and services within the cluster.  
 --> how to interact with cluster? (schedule pod, monitor, restart pod, reschedule, join a new node ...) -> Master Node  
 
 ### Master processes  
@@ -113,8 +113,10 @@ It serves as the front-end for the Kubernetes control plane, providing a REST AP
 request -> api server -> validates request -> other processes -> pod  
 
 **Scheduler**  
-Schedule new Pode -> api server -> Scheduler -> where to put the pod?  
-Scheduler just decides on which Node new Pod should be scheduled
+Schedule new Pode -> api server -> Scheduler -> where to put the pod?  -> kubelet will execute  
+Scheduler just decides on which Node new Pod should be scheduled  
+
+**Controller manager**  
 
 
 
