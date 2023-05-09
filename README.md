@@ -88,7 +88,7 @@ spec:
 #### stateful set
 db can't be replicated via deployment (because database have state - data storage) -> statefulSet  
 StatefulSet is designed for managing stateful applications that require stable network identifiers (such as hostnames) and persistent storage.  
-note: DB are often hosted outside of K8s cluster
+note: DB are often hosted outside of K8s cluster  
 
-
+## Kubernetes Architecture
 
