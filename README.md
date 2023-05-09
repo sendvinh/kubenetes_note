@@ -95,22 +95,25 @@ note: DB are often hosted outside of K8s cluster
 ### Node processes - Worker machine in K8s cluster  
 3 processes must be installed on every worker node  
 
-**Container runtime**: is responsible for **running and managing containers** on a node in a Kubernetes cluster. It provides an environment for containers to run in, including isolation, networking, and storage  
-**Kubelet**: interacts with both - the container and node. Kubelet starts the pod with a container inside. Kubelet is an agent that runs on each node in a Kubernetes cluster. It **communicates with the Kubernetes API server** to receive information about which pods should be running on the node, and then **manages the containers and other resources associated with those pods**.  
-**Kubeproxy**: forwards the requests. It is responsible for **managing network routing**. It runs on each node in the cluster and maintains network rules to allow communication between different pods and services within the cluster.
+**Container runtime**  
+is responsible for **running and managing containers** on a node in a Kubernetes cluster. It provides an environment for containers to run in, including isolation, networking, and storage  
+**Kubelet**  
+interacts with both - the container and node. Kubelet starts the pod with a container inside. Kubelet is an agent that runs on each node in a Kubernetes cluster. It **communicates with the Kubernetes API server** to receive information about which pods should be running on the node, and then **manages the containers and other resources associated with those pods**.  
+**Kubeproxy**   
+forwards the requests. It is responsible for **managing network routing**. It runs on each node in the cluster and maintains network rules to allow communication between different pods and services within the cluster.
 --> how to interact with cluster? (schedule pod, monitor, restart pod, reschedule, join a new node ...) -> Master Node  
 
 ### Master processes  
 4 processes run on every master node  
 
-**Api Server**
+**Api Server**  
 is like cluster gateway, which gets the initial request of any updates into the cluster  
 acts as a gatekeeper for authentication for authentication  
 It serves as the front-end for the Kubernetes control plane, providing a REST API for all Kubernetes resources  
 request -> api server -> validates request -> other processes -> pod  
 
-**Scheduler**
-Schedule new Pode -> api server -> Scheduler -> where to put the pod?
+**Scheduler**  
+Schedule new Pode -> api server -> Scheduler -> where to put the pod?  
 Scheduler just decides on which Node new Pod should be scheduled
 
 
