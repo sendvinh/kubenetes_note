@@ -56,7 +56,7 @@ external configuration of your application
 dont put credentials into configMap
 #### secret
 similar to configmap, used to store secret data (in base64 encoded)
-#### volumnes
+#### volumes
 storage on local node or remote (outside of k8s cluster)
 
 #### deployment
@@ -130,6 +130,8 @@ note: application data is NOT stored in etcd!
 **Master nodes usually need less resources than worker nodes**
 
 ## Minikube and kubectl
+
+## Main Kubectl Commands
 
 
 
