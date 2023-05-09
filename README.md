@@ -15,7 +15,7 @@ new ip address on re-creation
 #### service
 provides static/permanent ip address that can be attached to each pod  
 lifecycle of Pod and Service NOT connected -> if Pod dies, service and its IP address still stay  
-internal service  
+provide load balancer
 ```yaml
 apiVersion: v1
 kind: Service
@@ -61,6 +61,7 @@ storage on local node or remote (outside of k8s cluster)
 
 #### deployment
 manages a set of replicas of your application  
+the replica is connected to the same service
 provide an easy way to manage the lifecycle of your application, including scaling, rolling updates, and self-healing in the event of failures  
 Ex:
 ```yaml
@@ -85,7 +86,9 @@ spec:
             - containerPort: 80
 ```
 #### stateful set
-
+db can't be replicated via deployment (because database have state - data storage) -> statefulSet  
+StatefulSet is designed for managing stateful applications that require stable network identifiers (such as hostnames) and persistent storage.  
+note: DB are often hosted outside of K8s cluster
 
 
 
