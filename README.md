@@ -126,6 +126,10 @@ cluster changes get stored in the key value store in etcd
 -> that's why how scheduler know what resources are available; how it know cluster state change...  
 note: application data is NOT stored in etcd!
 
+**KUBENETES cluster is usually made of multiple Master nodes**
+**Master nodes usually need less resources than worker nodes**
+
+## Minikube and kubectl
 
 
 
