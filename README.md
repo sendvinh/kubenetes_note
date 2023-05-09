@@ -120,10 +120,11 @@ Scheduler just decides on which Node new Pod should be scheduled
 **Controller manager**  
 watch the state of the cluster and make changes to maintain the desired state  
 
-**etcdr**  
+**etcd**  
 it's cluster brain
 cluster changes get stored in the key value store in etcd  
 -> that's why how scheduler know what resources are available; how it know cluster state change...  
+note: application data is NOT stored in etcd!
 
 
 
