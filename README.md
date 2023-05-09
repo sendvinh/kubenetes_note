@@ -53,6 +53,9 @@ spec:
 ```
 #### configMap
 external configuration of your application  
+dont put credentials into configMap
+#### secret
+similar to configmap, used to store secret data (in base64 encoded)
 
 
 
