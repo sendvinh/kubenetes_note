@@ -62,7 +62,7 @@ storage on local node or remote (outside of k8s cluster)
 #### deployment
 manages a set of replicas of your application  
 provide an easy way to manage the lifecycle of your application, including scaling, rolling updates, and self-healing in the event of failures  
-Ex:  
+Ex:
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
