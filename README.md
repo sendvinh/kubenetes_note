@@ -61,7 +61,7 @@ storage on local node or remote (outside of k8s cluster)
 
 #### deployment
 manages a set of replicas of your application  
-the replica is connected to the same service
+the replica is connected to the same service  
 provide an easy way to manage the lifecycle of your application, including scaling, rolling updates, and self-healing in the event of failures  
 Ex:
 ```yaml
@@ -91,4 +91,26 @@ StatefulSet is designed for managing stateful applications that require stable n
 note: DB are often hosted outside of K8s cluster  
 
 ## Kubernetes Architecture
+### Node processes
+#### Worker machine in K8s cluster
+3 processes must be installed on every Node  
+**Container runtime**: is responsible for **running and managing containers** on a node in a Kubernetes cluster. It provides an environment for containers to run in, including isolation, networking, and storage  
+**Kubelet**: interacts with both - the container and node. Kubelet starts the pod with a container inside. Kubelet is an agent that runs on each node in a Kubernetes cluster. It **communicates with the Kubernetes API server** to receive information about which pods should be running on the node, and then **manages the containers and other resources associated with those pods**.  
+**Kubeproxy**: forwards the requests. It is responsible for **managing network routing**. It runs on each node in the cluster and maintains network rules to allow communication between different pods and services within the cluster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
