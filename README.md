@@ -113,7 +113,7 @@ It serves as the front-end for the Kubernetes control plane, providing a REST AP
 request -> api server -> validates request -> other processes -> pod  
 
 **Scheduler**  
-responsible for scheduling workloads onto the available nodes in the cluster
+responsible for scheduling workloads onto the available nodes in the cluster  
 Schedule new Pod -> api server -> Scheduler -> where to put the pod?  -> kubelet will execute  
 Scheduler just decides on which Node new Pod should be scheduled  
 
