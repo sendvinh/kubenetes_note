@@ -129,10 +129,10 @@ note: application data is NOT stored in etcd!
 **KUBENETES cluster is usually made of multiple Master nodes**  
 **Master nodes usually need less resources than worker nodes**
 
-## Minikube and kubectl
-
-## Main Kubectl Commands
-
+## Minikube and kubectl  
+...  
+## Main Kubectl Commands  
+...  
 ## Helm && Helm charts  
 Helm is package manager for Kubernetes  
 Helm charts  
