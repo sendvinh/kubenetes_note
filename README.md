@@ -145,11 +145,16 @@ helm charts in public registries and private registries
 Template yaml config (e.g {{.Values.name }})  
 get from values.yaml file  
 directory structure  
-mychart/  
+**mychart/  
  |--Chart.yaml  
  |--values.yaml  
  |--charts/  
- |--templates/  
+ |--templates/**
+
+**Chart.yaml**: meta info about chart  
+**values.yaml**: values for the template files  
+**charts folder**: chart dependencies  
+**template folder**: the actual template files  
  
 
 
