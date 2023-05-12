@@ -133,6 +133,25 @@ note: application data is NOT stored in etcd!
 
 ## Main Kubectl Commands
 
+## Helm && Helm charts  
+Helm is package manager for Kubernetes  
+Helm charts  
+- is bundle of yaml files  
+- create your own Helm Charts with Helm  
+- Push them to Helm Repository
+- Download and use existing ones  
+helm charts in public registries and private registries  
+#### Templatting Engine
+Template yaml config (e.g {{.Values.name }})  
+get from values.yaml file  
+directory structure  
+mychart/  
+ |--Chart.yaml  
+ |--values.yaml  
+ |--charts/  
+ |--templates/  
+ 
+
 
 
 
